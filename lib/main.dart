@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
+  final TabController _tabController;
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -31,32 +32,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-            child: CarouselSlider(
-                items: [
-              Hero(
-                  tag: '',
-                  child: Container(
-                    margin: const EdgeInsets.all(6.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8.0),
-                      image: const DecorationImage(
-                        image: NetworkImage(
-                            "https://images.pexels.com/photos/12328370/pexels-photo-12328370.jpeg?cs=srgb&dl=pexels-julian-bracero-12328370.jpg&fm=jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  )),
-            ],
-                options: CarouselOptions(
-                    height: 500,
-                    enlargeCenterPage: true,
-                    aspectRatio: 9 / 16,
-                    enableInfiniteScroll: true,
-                    viewportFraction: 1))),
-        appBar: AppBar(
-          title: Text(widget.title),
-        ));
+    return Scaffold(body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+      return <Widget>[
+        SliverAppBar(
+          title: Text("Weight Tracker"),
+          pinned: true,
+          floating: true,
+          forceElevated: innerBoxIsScrolled,
+          bottom: TabBar(tabs: <Tabs>[Tab(text: 'HELLO'), Tab(text: 'BYE')]
+          controller: _tabController,),
+        )
+      ];
+    }));
   }
 }
