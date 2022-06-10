@@ -1,12 +1,12 @@
 // @dart=2.17
-// Flutter web bootstrap script for package:helloworld/main.dart.
+// Flutter web bootstrap script for package:hairilhumsani/main.dart.
 
 import 'dart:ui' as ui;
 import 'dart:async';
 
-import 'package:helloworld/main.dart' as entrypoint;
+import 'package:hairilhumsani/main.dart' as entrypoint;
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:helloworld/generated_plugin_registrant.dart';
+import 'package:hairilhumsani/generated_plugin_registrant.dart';
 
 typedef _UnaryFunction = dynamic Function(List<String> args);
 typedef _NullaryFunction = dynamic Function();

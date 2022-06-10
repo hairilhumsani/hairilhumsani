@@ -45,18 +45,18 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyAJLm5uul3SQ4ZkiyukN4mEF4Iy16v0Xjo',
-    appId: '1:1065706073752:web:8c209ea66212f99a856aed',
+    appId: '1:1065706073752:web:5eac4d38f901bc63856aed',
     messagingSenderId: '1065706073752',
     projectId: 'hairilhumsani-97f76',
     authDomain: 'hairilhumsani-97f76.firebaseapp.com',
     databaseURL: 'https://hairilhumsani-97f76-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'hairilhumsani-97f76.appspot.com',
-    measurementId: 'G-RED27CSSM3',
+    measurementId: 'G-X27RBKF4TK',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCmqDu3zXlYi7SXd1fKm7netDTT5xdB5mk',
-    appId: '1:1065706073752:android:6084b5b1ad894a15856aed',
+    appId: '1:1065706073752:android:780ff10f510f6ac7856aed',
     messagingSenderId: '1065706073752',
     projectId: 'hairilhumsani-97f76',
     databaseURL: 'https://hairilhumsani-97f76-default-rtdb.asia-southeast1.firebasedatabase.app',
@@ -65,7 +65,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDugNO24GgrQ-8MJr3PVONofJ_GUStKdRo',
-    appId: '1:1065706073752:ios:740ef8e1187ee369856aed',
+    appId: '1:1065706073752:ios:f16e995c80d4fc05856aed',
     messagingSenderId: '1065706073752',
     projectId: 'hairilhumsani-97f76',
     databaseURL: 'https://hairilhumsani-97f76-default-rtdb.asia-southeast1.firebasedatabase.app',
@@ -76,7 +76,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDugNO24GgrQ-8MJr3PVONofJ_GUStKdRo',
-    appId: '1:1065706073752:ios:8cf064a295c7831c856aed',
+    appId: '1:1065706073752:ios:6d64b61b9497479c856aed',
     messagingSenderId: '1065706073752',
     projectId: 'hairilhumsani-97f76',
     databaseURL: 'https://hairilhumsani-97f76-default-rtdb.asia-southeast1.firebasedatabase.app',
