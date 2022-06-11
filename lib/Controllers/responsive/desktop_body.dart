@@ -8,7 +8,7 @@ class MyDesktopBody extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepPurple[200],
       appBar: AppBar(
-        title: Text('D E S K T O P'),
+        title: const Text('PORTFOLIO'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
