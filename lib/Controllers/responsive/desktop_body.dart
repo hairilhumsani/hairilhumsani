@@ -18,16 +18,29 @@ class MyDesktopBody extends StatelessWidget {
             Expanded(
               child: Column(
                 children: [
-                  // youtube video
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: AspectRatio(
-                      aspectRatio: 16 / 9,
-                      child: Container(
-                        color: Colors.deepPurple[400],
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: AspectRatio(
+                          aspectRatio: 16 / 9,
+                          child: Container(
+                            color: Colors.deepPurple[400],
+                          ),
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: AspectRatio(
+                          aspectRatio: 16 / 9,
+                          child: Container(
+                            color: Colors.deepPurple[400],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
+                  // youtube video
 
                   // comment section & recommended videos
                   Expanded(
