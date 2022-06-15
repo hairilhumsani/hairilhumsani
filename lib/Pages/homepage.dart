@@ -25,8 +25,9 @@ class HomeBuild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SingleChildScrollView(
+        child: Container(
       color: Colors.purple[300],
-    );
+    ));
   }
 }
