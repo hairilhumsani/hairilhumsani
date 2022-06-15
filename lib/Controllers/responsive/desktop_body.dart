@@ -5,59 +5,63 @@ class MyDesktopBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurple[200],
-      appBar: AppBar(
-        title: const Text('PORTFOLIO'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          children: [
-            // First column
-            Expanded(
-              child: Column(
-                children: [
-                  // youtube video
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: AspectRatio(
-                      aspectRatio: 16 / 9,
-                      child: Container(
-                        color: Colors.deepPurple[400],
-                      ),
+    return 
+     Padding(
+      padding: const EdgeInsets.fromLTRB(200, 30, 200, 30),
+      child: Row(
+        children: [
+          // First column
+          Expanded(
+            child: Column(
+              children: [
+                // youtube video
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: AspectRatio(
+                    aspectRatio: 16 / 9,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.deepPurple[400],
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(5))),
                     ),
                   ),
+                ),
 
-                  // comment section & recommended videos
-                  Expanded(
-                    child: ListView.builder(
-                      itemCount: 8,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            color: Colors.deepPurple[300],
-                            height: 120,
-                          ),
-                        );
-                      },
-                    ),
-                  )
-                ],
-              ),
+                // comment section & recommended videos
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: 8,
+                    
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.deepPurple[300],
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(5))),
+                          height: 120,
+                        ),
+                      );
+                    },
+                  ),
+                )
+              ],
             ),
+          ),
 
-            // second column
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                width: 310,
-                color: Colors.deepPurple[300],
-              ),
-            )
-          ],
-        ),
+          // second column
+          Padding(
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.deepPurple[300],
+                  borderRadius: const BorderRadius.all(Radius.circular(5))),
+              width: 200
+            ),
+          )
+        ],
       ),
     );
   }

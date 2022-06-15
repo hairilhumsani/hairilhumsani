@@ -5,13 +5,8 @@ class MyMobileBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurple[200],
-      appBar: AppBar(
-        title: const Text('PORTFOLIO'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
+    return Padding(
+        padding: const EdgeInsets.all(30.0),
         child: Column(
           children: [
             // youtube video
@@ -42,7 +37,6 @@ class MyMobileBody extends StatelessWidget {
             )
           ],
         ),
-      ),
-    );
+      );
   }
 }

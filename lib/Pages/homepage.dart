@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hairilhumsani/Controllers/navbar/navbar.dart';
 import 'package:hairilhumsani/Controllers/responsive/desktop_body.dart';
 import 'package:hairilhumsani/Controllers/responsive/mobile_body.dart';
 import 'package:hairilhumsani/Controllers/responsive/responsive_layout.dart';
@@ -14,8 +15,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: ResponsiveLayout(
+    return Scaffold(
+      drawer: const NavBar(),
+      backgroundColor: Colors.deepPurple[200],
+      appBar: AppBar(title: const Text('PORTFOLIO')),
+      body: const ResponsiveLayout(
         mobileBody: MyMobileBody(),
         desktopBody: MyDesktopBody(),
       ),
